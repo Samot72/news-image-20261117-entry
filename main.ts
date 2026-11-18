@@ -8,7 +8,8 @@
 // and an "Also on" column). The harness runs this program with no network
 // and expects exactly one file afterwards: entry.png inside the output
 // directory. So the whole program is a faithful byte-for-byte copy of the
-// shipped asset to that destination.
+// shipped asset to that destination. The shipped image is 1024 by 1024
+// pixels and under the competition's 1 MiB cap, so the copy is valid as is.
 
 import { copyFileSync, mkdirSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
